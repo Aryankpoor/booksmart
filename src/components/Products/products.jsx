@@ -1,5 +1,7 @@
 import React from 'react'
-import Grid from '@material-ui/core/Grid'
+import Grid from '@mui/material/Grid';
+
+import Product from './Product/Product'
 
 const products = [
     { id: 1, name: 'Books', description: 'Entrance Exam Books', price: '₹ 150'},
@@ -7,7 +9,8 @@ const products = [
 ]
 
 const Products = () => {
-   <main>
+   return (
+    <main>
     <Grid container justify="center" spacing={4}>
        {products.map((product) => (
         <Grid item key={product.id} xs={12} sm={6} md={4} lg={3}>
@@ -17,6 +20,7 @@ const Products = () => {
        ))}
     </Grid>
    </main>
+   )
 }
 
 export default Products
