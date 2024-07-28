@@ -16,7 +16,7 @@ const Navbar = () => {
             </div>
             <ul className="nav-menu">
                 <li onClick={()=>{setMenu("shop")}}>Shop{menu==="shop"?<hr/>:<></>}</li>
-                <li onClick={()=>{setMenu("entrance")}}>ENTRANCE EXAM BOOKS{menu==="entrance"?<hr/>:<></>}</li>
+                <li onClick={()=>{setMenu("entrance")}}>ENTRANCE EXAM{menu==="entrance"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("school")}}>SCHOOL BOOKS{menu==="school"?<hr/>:<></>}</li>
                 <li onClick={()=>{setMenu("others")}}>OTHERS{menu==="others"?<hr/>:<></>}</li>
             </ul>
